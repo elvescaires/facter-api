@@ -622,7 +622,6 @@ model Box {
   id            String        @id
   name          String        @unique   
   description   String?              
-  position      Int?          @unique
   isActive      Boolean       @default(true) @map("is_active")
   company       Company       @relation(fields: [companyId], references: [id])
   companyId     String        @map("company_id")
